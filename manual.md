@@ -1,9 +1,8 @@
 > The following document is a user manual for the Apexo project. If you would like to know about the technical details, or you would like to build the application yourself please refer to the [Github repository](https://github.com/alselawi/apexo-flutter) and read through [readme.md](https://github.com/alselawi/apexo-flutter/blob/master/README.md).
 
-
 ## Downloading
 
-You can download the application from the website: [apexo.app](https://apexo.app). Click ___"Get started"___ and choose your platform (windows, android ...etc).
+You can download the application from the website: [apexo.app](https://apexo.app). Click **_"Get started"_** and choose your platform (windows, android ...etc).
 
 You can also download the application directly from the [Github repository](https://github.com/alselawi/apexo-flutter/tree/master/dist).
 
@@ -26,21 +25,21 @@ Using the link above (which is an affiliate link) you can get 200$ of credit in 
 3. After creating the droplet, you must allow up to 3 minutes for the server to start.
 
 4. Next, head to your droplet page and click on "access" then "launch droplet console".
-    ![Access](https://raw.githubusercontent.com/alselawi/apexo-flutter/master/docs/manual_imgs/access.png)
+   ![Access](https://raw.githubusercontent.com/alselawi/apexo-flutter/master/docs/manual_imgs/access.png)
 
 5. Once you have access to the console, run the following command:
-    ```
-    /opt/pocketbase/pocketbase superuser create admin@example.com password123456789
-    ```
-    change `admin@example.com` to your email and  `password123456789` to your password. This command will create a new admin user.
 
+   ```
+   /opt/pocketbase/pocketbase superuser create admin@example.com password123456789
+   ```
 
-6. If you have a custom domain (preferable) run the following command: `nano /etc/caddy/Caddyfile` and replace the first line with your domain (e.g. `example.com`). This will allow you to access the server through the ___https___ protocol (https://example.com). You will also need to setup your domain DNS to point to the server (this can vary depending on your domain provider, but it's usually a straight forward task done through the domain provider's website).
+   change `admin@example.com` to your email and `password123456789` to your password. This command will create a new admin user.
+
+6. If you have a custom domain (preferable) run the following command: `nano /etc/caddy/Caddyfile` and replace the first line with your domain (e.g. `example.com`). This will allow you to access the server through the **_https_** protocol (https://example.com). You will also need to setup your domain DNS to point to the server (this can vary depending on your domain provider, but it's usually a straight forward task done through the domain provider's website).
 
 7. Login to your server either through the IP that is set to your droplet or through the domain you have set to make sure that your server and your credentials work. use the credentials you have set in step 5. The pocket dashboard is located at `https://SERVER/_/`, where SERVER is the IP or domain you have set.
 
 8. Open the apexo app and enter the server address (either IP or custom domain) and you credentials (email & password) you have set in step 5. The application will automatically verify the server and set it up further. Then, you can start using the application once it fully loads.
-
 
 ## Best practices
 
@@ -50,29 +49,29 @@ While your application is now ready and working there are further steps to take 
 
 Setting up email is useful for sending login alert notifications, password reset email, and other emails.
 
-From the left sidebar go to "settings" and the "mail settings". 
+From the left sidebar go to "settings" and the "mail settings".
 
 The following values are for gmail:
+
 - Sender name: _your name_
 - Sender email: _your email_
-- SMTP host: __smtp.gmail.com__
-- SMTP port: __587__
+- SMTP host: **smtp.gmail.com**
+- SMTP port: **587**
 - SMTP username: _your email_
 - SMTP password: _password_
 
 The password field is the same password you use to login to your email account. However if you use 2-step verification you must generate an app password for this field [from your google account settings](https://myaccount.google.com/apppasswords).
 
-
 The following values are for outlook:
+
 - Sender name: _your name_
 - Sender email: _your email_
-- SMTP host: __smtp-mail.outlook.com__
-- SMTP port: __587__
+- SMTP host: **smtp-mail.outlook.com**
+- SMTP port: **587**
 - SMTP username: _your email_
 - SMTP password: _password_
 
 The password field is the same password you use to login to your email account. However if you use 2-step verification you must generate an app password for this field [from your outlook account settings](https://account.live.com/proofs/Manage/additional).
-
 
 For other email providers, you can find the SMTP settings in their documentation.
 
@@ -98,14 +97,13 @@ Having a separate S3 bucket for your photos is a good idea because you can scale
 
 To setup S3, first you'll have to register with an S3 provider. The following are some of the most popular S3 and how much would it cost for 250GB of storage:
 
-- [AWS S3](https://aws.amazon.com/s3/) __Free for 5GB__, ~$5.6 for 250GB
+- [AWS S3](https://aws.amazon.com/s3/) **Free for 5GB**, ~$5.6 for 250GB
 - [Digital Ocean Spaces](https://www.digitalocean.com/products/spaces/) _No free tier_, ~$5 for 250GB
 - [Scaleway](https://www.scaleway.com/en/object-storage/) _No free tier_, ~$3.75 for 250GB
 - [Backblaze B2](https://www.backblaze.com/b2/cloud-storage.html) _No free tier_, ~$1.5 for 250GB
-- [Google Cloud Storage](https://cloud.google.com/storage) __Free for 5GB__, ~$5 for 250GB
+- [Google Cloud Storage](https://cloud.google.com/storage) **Free for 5GB**, ~$5 for 250GB
 - [iDrive](https://www.idrive.com/s3-storage-e2/) _No free tier_, ~$1.5 for 250GB
-- [Cloudflare R2](https://www.cloudflare.com/products/r2/) __Free for 10GB__, ~$3.5 for 250GB
-
+- [Cloudflare R2](https://www.cloudflare.com/products/r2/) **Free for 10GB**, ~$3.5 for 250GB
 
 Once you've registered with an S3 provider, you'll have to create a bucket and get the following information: endpoint, bucket name, region, access key, and secret key. You can find the documentation for each provider on how to create a bucket and get the information.
 

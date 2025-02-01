@@ -1,6 +1,5 @@
 # Apexo
 
-
 Apexo is application intended for simple and easy management of dental clinics. Its free and open source. It supports patient management, appointment management, photo attachments, multiple doctors, multiple users, works offline, synchronizes through multiple devices, multi-lingual, secure, supports backups.
 
 [Website](https://apexo.app) - [Demo](https://demo.apexo.app) - [Download](https://apexo.app/#getting-started) - [Documentation](https://docs.apexo.app)
@@ -23,23 +22,22 @@ Check the [manual.md](https://github.com/alselawi/apexo-flutter/blob/master/manu
 
 In previous versions of apexo, [in an old github account of mine that I lost access to, and abandoned since then](https://github.com/alexcorvi/apexo), the tech-stack was quite different, Typescript/React to create a single page PWA and CouchDB as backend. However, with usage I have found that the web platform, although great for other application, was limiting for this application. So in summer 2024 I started a whole re-write of apexo and published it to my new github account.
 
-- ___Can you migrate from that application to this one?___
-   - __No you can't__, I'm sorry. This is a new release, the versioning isn't even a continuation from the old one.
-   - However, I plan to support this version so that it will always be backwards compatible.
+- **_Can you migrate from that application to this one?_**
+  - **No you can't**, I'm sorry. This is a new release, the versioning isn't even a continuation from the old one.
+  - However, I plan to support this version so that it will always be backwards compatible.
 
 ## Available platforms
 
-- __Windows__: All features should/are tested and works.
-- __Android__: All features should/are tested and works.
-- __Web__: partial support, photo uploading isn't supported (todo).
-- __iOS__: planned, not yet implemented.
-- __MacOS__: planned, not yet implemented.
+- **Windows**: All features should/are tested and works.
+- **Android**: All features should/are tested and works.
+- **Web**: partial support, photo uploading isn't supported (todo).
+- **iOS**: planned, not yet implemented.
+- **MacOS**: planned, not yet implemented.
 
 ## Testing
 
-- [How to run ___unit testing___](https://github.com/alselawi/apexo-flutter/blob/master/test/unit_test_readme.md).
-- [How to run ___integration testing___](https://github.com/alselawi/apexo-flutter/blob/master/integration_test/readme.md).
-
+- [How to run **_unit testing_**](https://github.com/alselawi/apexo-flutter/blob/master/test/unit_test_readme.md).
+- [How to run **_integration testing_**](https://github.com/alselawi/apexo-flutter/blob/master/integration_test/readme.md).
 
 ## Building
 
@@ -65,8 +63,8 @@ If you insist to help:
 - Submit PR request to improve the project.
 - Pray for peace and better future in the middle east.
 
-
 #### Built with ❤️ in Mosul, Iraq.
 
 ## License
+
 GNU General Public License v3.0.

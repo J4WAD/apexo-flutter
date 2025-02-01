@@ -52,7 +52,8 @@ class Es implements En {
     "onceConnectionIsStable":
         "Una vez que tu conexión sea estable, puedes usar el botón en la esquina superior derecha para reconectar.",
     "unRestrictedAccess": "acceso sin restricciones en la aplicación",
-    "restrictedAccess": "acceso restringido a algunas pantallas según lo dictado por el administrador",
+    "restrictedAccess":
+        "acceso restringido a algunas pantallas según lo dictado por el administrador",
     "youAreCurrentlyIn": "Actualmente estás en",
     "mode": "modo",
     "youHave": "Tienes",
@@ -79,7 +80,8 @@ class Es implements En {
     "doctorEmail": "Correo del doctor",
     "dutyDays": "Días de servicio",
     "addAppointment": "Añadir cita",
-    "lockToUsers": "Solo los siguientes usuarios pueden ver/editar los datos y citas de este doctor",
+    "lockToUsers":
+        "Solo los siguientes usuarios pueden ver/editar los datos y citas de este doctor",
     "noUpcomingAppointmentsForThisDoctor":
         "No se econtraron citas próximas. Use el botón abajo para añadir una nueva cita.",
 
@@ -147,7 +149,8 @@ class Es implements En {
     "editPatient": "Editar paciente",
     "editAppointment": "Editar cita",
     "patientPage": "Página web del paciente",
-    "patientCanUseTheFollowing": "El paciente puede usar el siguiente enlace para acceder a sus citas, pagos y fotos.",
+    "patientCanUseTheFollowing":
+        "El paciente puede usar el siguiente enlace para acceder a sus citas, pagos y fotos.",
     "printQR": "Imprimir código QR",
     "dentalNotes": "Notas dentales",
     "showPrimary": "Mostrar principal",
@@ -181,7 +184,8 @@ class Es implements En {
     "changeDate": "Cambiar fecha",
     "changeTime": "Cambiar hora",
     "attention": "Atención",
-    "doctorNotAvailable": "Uno de los doctores seleccionados podría no estar disponible en la fecha seleccionada.",
+    "doctorNotAvailable":
+        "Uno de los doctores seleccionados podría no estar disponible en la fecha seleccionada.",
     "time": "Hora",
     "preOperativeNotes": "Notas preoperatorias",
     "selectDoctors": "Seleccionar doctores",
@@ -260,16 +264,20 @@ class Es implements En {
 
     // settings
     "currency": "Moneda",
-    "currency_desc": "Código de moneda a usar en toda la aplicación (p. ej., USD, EUR, IQD).",
-    "phone_desc": "El número de teléfono se mostrará en impresiones y en la página web del paciente.",
+    "currency_desc":
+        "Código de moneda a usar en toda la aplicación (p. ej., USD, EUR, IQD).",
+    "phone_desc":
+        "El número de teléfono se mostrará en impresiones y en la página web del paciente.",
     "prescriptionFooter": "Pie de página de la receta",
     "prescriptionFooter_desc": "Este texto se mostrará al final de la receta.",
     "language": "Idioma",
-    "language_desc": "El idioma de la interfaz para los menús, botones e información usada en toda la aplicación.",
+    "language_desc":
+        "El idioma de la interfaz para los menús, botones e información usada en toda la aplicación.",
     "startingDayOfWeek": "Primer día de la semana",
     "startingDayOfWeek_desc": "El día de la semana en que comienza la semana.",
     "dateFormat": "Formato de fecha",
-    "dateFormat_desc": "Este formato se usará para mostrar fechas cuando aplique.",
+    "dateFormat_desc":
+        "Este formato se usará para mostrar fechas cuando aplique.",
     "cacheReset": "Reiniciar caché",
     "cacheReset_desc":
         "Puedes usar el siguiente botón para reiniciar el caché de la aplicación, excepto las imágenes. Esto puede ayudar a resolver algunos problemas que podrías estar teniendo al sincronizar con otros dispositivos.",
@@ -290,16 +298,20 @@ class Es implements En {
     "restoreBackup": "Restaurar copia de seguridad",
     "restoreBackupWarning1":
         "Restaurar esta copia de seguridad sobrescribirá todos los datos actuales en la aplicación. Cualquier cambio que hayas hecho después de la fecha de esta copia de seguridad",
-    "restoreBackupWarning2": "se perderá.\n\n¿Estás seguro de que deseas restaurar esta copia de seguridad?",
-    "sureDeleteBackup": "¿Estás seguro de que deseas eliminar esta copia de seguridad?",
+    "restoreBackupWarning2":
+        "se perderá.\n\n¿Estás seguro de que deseas restaurar esta copia de seguridad?",
+    "sureDeleteBackup":
+        "¿Estás seguro de que deseas eliminar esta copia de seguridad?",
     "backupDate": "Fecha de la copia de seguridad",
-    "useTheFollowingLinkToDownloadTheBackup": "Usa el siguiente enlace para descargar la copia de seguridad",
+    "useTheFollowingLinkToDownloadTheBackup":
+        "Usa el siguiente enlace para descargar la copia de seguridad",
 
     // advanced settings: Admins
     "admins": "Administradores",
     "accountCreated": "Cuenta creada",
     "editAdmin": "Editar administrador",
-    "validEmailMustBeProvided": "Debe proporcionarse un correo electrónico válido",
+    "validEmailMustBeProvided":
+        "Debe proporcionarse un correo electrónico válido",
     "password": "Contraseña",
     "leaveBlankToKeepUnchanged": "Deja en blanco para mantener sin cambios",
     "updatingPassword": "Actualizando contraseña",
@@ -321,17 +333,20 @@ class Es implements En {
     // advanced settings: prod tests
     "prodTests": "Pruebas de producción",
     "fileStorageTest": "Prueba de almacenamiento de archivos",
-    "fileStorageTestDesc": "Usa el siguiente botón para probar si el almacenamiento S3 está funcionando correctamente.",
+    "fileStorageTestDesc":
+        "Usa el siguiente botón para probar si el almacenamiento S3 está funcionando correctamente.",
     "fileStorageButton": "Probar configuración S3",
     "fileStorageFail": "La configuración de S3 falló",
-    "fileStorageSuccess": "La configuración de S3 está funcionando correctamente",
+    "fileStorageSuccess":
+        "La configuración de S3 está funcionando correctamente",
     "emailTest": "Prueba de correo",
     "emailTestDesc":
         "Usa el siguiente botón para probar si tu servidor puede enviar correos electrónicos correctamente. Un correo parecido a una reestablecimiento de contraseña debería ser entregado a la dirección de correo objetivo.",
     "targetEmail": "Correo objetivo",
     "emailTestButton": "Enviar correo de prueba",
     "emailTestFail": "La prueba de correo falló",
-    "emailTestSuccess": "Correo enviado exitosamente, por favor revisa tu bandeja de entrada.",
+    "emailTestSuccess":
+        "Correo enviado exitosamente, por favor revisa tu bandeja de entrada.",
     "fail": "Fallar",
     "success": "Éxito",
 
@@ -341,11 +356,14 @@ class Es implements En {
     "serverUrl": "URL del servidor",
     "proceedOffline": "Proceder fuera de línea",
     "youLLGet": "Obtendrás el enlace de restablecimiento por correo",
-    "beenSent": "Instrucciones para restablecer la contraseña han sido enviadas, revisa tu bandeja de entrada.",
+    "beenSent":
+        "Instrucciones para restablecer la contraseña han sido enviadas, revisa tu bandeja de entrada.",
 
     // other
-    "sureArchiveSelected": "¿Estás seguro de que deseas archivar los elementos seleccionados?",
-    "sureClosePanel": "¿Estás seguro de que deseas cerrar el panel? Todos los cambios no guardados se perderán.",
+    "sureArchiveSelected":
+        "¿Estás seguro de que deseas archivar los elementos seleccionados?",
+    "sureClosePanel":
+        "¿Estás seguro de que deseas cerrar el panel? Todos los cambios no guardados se perderán.",
     "sure": "Seguro",
     "back": "Regresar",
     "firstLaunchDialogTitle": "Bienvenido a Apexo",
