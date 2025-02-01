@@ -91,7 +91,7 @@ class Patient extends Model {
   }
 
   get webPageLink {
-    return "http://lachrysalide.school/${encode("$id|$title|${login.url}")}";
+    return "https://dentalpatient.netlify.app/${encode("$id|$title|${login.url}")}";
   }
 
   @override
