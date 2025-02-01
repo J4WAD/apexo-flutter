@@ -18,8 +18,7 @@ class Patient extends Model {
 
   List<Appointment>? _doneAppointmentsCached;
   List<Appointment> get doneAppointments {
-    return _doneAppointmentsCached ??= (appointments.byPatient[id]?["done"] ??
-            [])
+    return _doneAppointmentsCached ??= (appointments.byPatient[id]?["done"] ?? [])
         .where((appointment) => appointment.archived != true || showArchived())
         .toList()
       ..sort((a, b) => a.date.compareTo(b.date));
@@ -48,8 +47,7 @@ class Patient extends Model {
   }
 
   double get pricesGiven {
-    return doneAppointments.fold(
-        0.0, (value, element) => value + element.price);
+    return doneAppointments.fold(0.0, (value, element) => value + element.price);
   }
 
   bool get overPaid {
@@ -76,22 +74,20 @@ class Patient extends Model {
   @override
   get avatar {
     if (launch.isDemo) return "https://person.alisaleem.workers.dev/";
-    final appointmentsWithImages =
-        allAppointments.where((a) => a.imgs.isNotEmpty);
+    final appointmentsWithImages = allAppointments.where((a) => a.imgs.isNotEmpty);
     if (appointmentsWithImages.isEmpty) return null;
     return appointmentsWithImages.first.imgs.first;
   }
 
   @override
   get imageRowId {
-    final appointmentsWithImages =
-        allAppointments.where((a) => a.imgs.isNotEmpty);
+    final appointmentsWithImages = allAppointments.where((a) => a.imgs.isNotEmpty);
     if (appointmentsWithImages.isEmpty) return null;
     return appointmentsWithImages.first.id;
   }
 
   get webPageLink {
-    return "http://lachrysalide.school/${encode("$id|$title|${login.url}")}";
+    return "https://patient.apexo.app/${encode("$id|$title|${login.url}")}";
   }
 
   @override
@@ -103,8 +99,7 @@ class Patient extends Model {
     if (daysSinceLastAppointment == null) {
       buildingLabels["Last visit"] = txt("noVisits");
     } else {
-      buildingLabels["Last visit"] =
-          "$daysSinceLastAppointment ${txt("daysAgo")}";
+      buildingLabels["Last visit"] = "$daysSinceLastAppointment ${txt("daysAgo")}";
     }
 
     if (gender == 0) {
