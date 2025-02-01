@@ -1,63 +1,68 @@
 <!DOCTYPE html>
 <html>
-	<head>
-		<base href="/" />
 
-		<meta charset="UTF-8" />
-		<meta content="IE=Edge" http-equiv="X-UA-Compatible" />
-		<meta name="description" content="Dental clinic management system" />
+<head>
+	<base href="/" />
 
-		<!-- iOS meta tags & icons -->
-		<meta name="mobile-web-app-capable" content="yes" />
-		<meta name="apple-mobile-web-app-status-bar-style" content="black" />
-		<meta name="apple-mobile-web-app-title" content="Apexo" />
-		<link rel="apple-touch-icon" href="icons/Icon-192.png" />
+	<meta charset="UTF-8" />
+	<meta content="IE=Edge" http-equiv="X-UA-Compatible" />
+	<meta name="description" content="Dental clinic management system" />
 
-		<!-- Favicon -->
-		<link rel="icon" type="image/png" href="favicon.png" />
+	<!-- iOS meta tags & icons -->
+	<meta name="mobile-web-app-capable" content="yes" />
+	<meta name="apple-mobile-web-app-status-bar-style" content="black" />
+	<meta name="apple-mobile-web-app-title" content="Apexo" />
+	<link rel="apple-touch-icon" href="icons/Icon-192.png" />
 
-		<title>Apexo</title>
-		<link rel="manifest" href="manifest.json" />
-		<style>
-			#progress {
-				width: 92px;
-				height: 122px;
-				background-image: url(./icons/Icon-192.png);
-				background-size: contain;
-				background-repeat: no-repeat;
-				background-position: center;
-				animation: pulse 1s infinite ease-in-out;
-				margin: 0 auto;
-				margin-top: 30%;
-				font-size: 12px;
-				text-transform: uppercase;
-				text-align: center;
-				font-family: monospace;
-				color: #e3e3e3;
+	<!-- Favicon -->
+	<link rel="icon" type="image/png" href="favicon.png" />
+
+	<title>Apexo</title>
+	<link rel="manifest" href="manifest.json" />
+	<style>
+		#progress {
+			width: 92px;
+			height: 122px;
+			background-image: url(./icons/Icon-192.png);
+			background-size: contain;
+			background-repeat: no-repeat;
+			background-position: center;
+			animation: pulse 1s infinite ease-in-out;
+			margin: 0 auto;
+			margin-top: 30%;
+			font-size: 12px;
+			text-transform: uppercase;
+			text-align: center;
+			font-family: monospace;
+			color: #e3e3e3;
+		}
+
+		@keyframes pulse {
+
+			0%,
+			100% {
+				transform: scale(1);
+				opacity: 1;
 			}
 
-			@keyframes pulse {
-				0%,
-				100% {
-					transform: scale(1);
-					opacity: 1;
-				}
-				50% {
-					transform: scale(1.2);
-					opacity: 0.8;
-				}
+			50% {
+				transform: scale(1.2);
+				opacity: 0.8;
 			}
-		</style>
-	</head>
-	<body>
-		<div id="progress">Apexo</div>
-    <script type="text/javascript">
-      window.onload = function() {
-          setTimeout(function() {
-              document.getElementById('progress').remove();
-          }, 1000 * 10);
-        };
-      </script>
-		<script src="flutter_bootstrap.js" async></script>
-	</body>
+		}
+	</style>
+</head>
+
+<body>
+	<div id="progress">J4</div>
+	<script type="text/javascript">
+		window.onload = function () {
+			setTimeout(function () {
+				document.getElementById('progress').remove();
+			}, 1000 * 10);
+		};
+	</script>
+	<script src="flutter_bootstrap.js" async></script>
+</body>
+
 </html>
