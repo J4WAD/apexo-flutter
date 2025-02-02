@@ -1,6 +1,6 @@
 [build]
   publish = "build/web"
-  command = "flutter build web"
+  command = "./install_flutter.sh && flutter build web"
 
 [context.production.environment]
   PATH = "/opt/buildhome/flutter/bin:$PATH"
