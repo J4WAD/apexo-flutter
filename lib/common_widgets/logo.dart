@@ -45,7 +45,7 @@ class _AppLogoState extends State<AppLogo> {
               height: 50,
             ),
             const SizedBox(width: 5),
-            Text("Dental", style: textStyle), //j4wad
+            Text("Dentisapp", style: textStyle), //j4wad
             const SizedBox(width: 5),
             Text(version, style: textStyle)
           ],
