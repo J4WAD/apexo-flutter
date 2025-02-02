@@ -1,0 +1,11 @@
+{
+  "name": "flutter-web-deploy",
+  "version": "1.0.0",
+  "scripts": {
+    "build": "node install-flutter.js && flutter build web"
+  },
+  "dependencies": {
+    "download": "^8.0.0",
+    "extract-zip": "^2.0.1"
+  }
+}
