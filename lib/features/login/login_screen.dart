@@ -41,10 +41,13 @@ class Login extends StatelessWidget {
                           value: localSettings.selectedLocale.toString(),
                           items: locale.list
                               .map((e) => ComboBoxItem(
-                                  value: locale.list.indexOf(e).toString(), key: Key(e.$code), child: Txt(e.$name)))
+                                  value: locale.list.indexOf(e).toString(),
+                                  key: Key(e.$code),
+                                  child: Txt(e.$name)))
                               .toList(),
                           onChanged: (indexString) {
-                            localSettings.selectedLocale = int.parse(indexString ?? "0");
+                            localSettings.selectedLocale =
+                                int.parse(indexString ?? "0");
                             localSettings.notifyAndPersist();
                           },
                         );
@@ -66,7 +69,8 @@ class Login extends StatelessWidget {
                     return TabView(
                         currentIndex: loginCtrl.selectedTab(),
                         onChanged: (input) {
-                          if (loginCtrl.loadingIndicator().isEmpty) loginCtrl.selectedTab(input);
+                          if (loginCtrl.loadingIndicator().isEmpty)
+                            loginCtrl.selectedTab(input);
                         },
                         closeButtonVisibility: CloseButtonVisibilityMode.never,
                         tabs: [
@@ -110,9 +114,12 @@ class Login extends StatelessWidget {
                               InfoBar(
                                 title: loginCtrl.resetInstructionsSent()
                                     ? Txt(key: WK.msgSentReset, txt("beenSent"))
-                                    : Txt(key: WK.msgWillSendReset, txt("youLLGet")),
-                                severity:
-                                    loginCtrl.resetInstructionsSent() ? InfoBarSeverity.success : InfoBarSeverity.info,
+                                    : Txt(
+                                        key: WK.msgWillSendReset,
+                                        txt("youLLGet")),
+                                severity: loginCtrl.resetInstructionsSent()
+                                    ? InfoBarSeverity.success
+                                    : InfoBarSeverity.info,
                               ),
                               const SizedBox(height: 1),
                               serverField(),
@@ -137,7 +144,8 @@ class Login extends StatelessWidget {
         });
   }
 
-  Container buildTabContainer(BuildContext context, List<Widget> fields, List<Widget> actions) {
+  Container buildTabContainer(
+      BuildContext context, List<Widget> fields, List<Widget> actions) {
     return Container(
       padding: const EdgeInsets.all(10),
       decoration: BoxDecoration(
@@ -152,7 +160,9 @@ class Login extends StatelessWidget {
               crossAxisAlignment: CrossAxisAlignment.start,
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
-                ...fields.map((field) => [field, const SizedBox(height: 5)]).expand((e) => e),
+                ...fields
+                    .map((field) => [field, const SizedBox(height: 5)])
+                    .expand((e) => e),
                 if (loginCtrl.loadingIndicator().isNotEmpty)
                   Center(
                     child: Column(
@@ -170,7 +180,10 @@ class Login extends StatelessWidget {
                     padding: const EdgeInsets.only(top: 8.0),
                     child: Row(
                       mainAxisSize: MainAxisSize.min,
-                      children: actions.map((e) => [e, const SizedBox(width: 5)]).expand((e) => e).toList(),
+                      children: actions
+                          .map((e) => [e, const SizedBox(width: 5)])
+                          .expand((e) => e)
+                          .toList(),
                     ),
                   ),
               ],
@@ -187,7 +200,7 @@ class Login extends StatelessWidget {
         controller: loginCtrl.urlField,
         textDirection: TextDirection.ltr,
         enabled: loginCtrl.loadingIndicator().isEmpty,
-        placeholder: "https://[pocketbase server]",
+        placeholder: "https://[server]",
         onSubmitted: (_) => fieldSubmit(),
       ),
     );
@@ -221,7 +234,11 @@ class Login extends StatelessWidget {
           padding: const EdgeInsets.symmetric(horizontal: 4),
           child: IconButton(
             onPressed: () => loginCtrl.obscureText(!loginCtrl.obscureText()),
-            icon: Icon(loginCtrl.obscureText() ? FluentIcons.red_eye : FluentIcons.hide, size: 18),
+            icon: Icon(
+                loginCtrl.obscureText()
+                    ? FluentIcons.red_eye
+                    : FluentIcons.hide,
+                size: 18),
           ),
         ),
         onSubmitted: (_) => fieldSubmit(),
