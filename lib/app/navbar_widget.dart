@@ -22,7 +22,7 @@ class BottomNavBar extends StatelessWidget {
         child: Acrylic(
           elevation: 30,
           child: Padding(
-            padding: const EdgeInsets.all(1),
+            padding: const EdgeInsets.symmetric(vertical: 2),
             child: StreamBuilder(
               stream: routes.currentRouteIndex.stream,
               builder: (context, snapshot) {
@@ -43,7 +43,7 @@ class BottomNavBar extends StatelessWidget {
                     const Divider(
                       direction: Axis.vertical,
                       style: DividerThemeData(
-                        verticalMargin: EdgeInsets.symmetric(vertical: 10),
+                        verticalMargin: EdgeInsets.symmetric(vertical: 6),
                       ),
                     ),
                     Flexible(
@@ -98,37 +98,36 @@ class BottomNavBarButton extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return SizedBox(
-      height: 60,
-      child: IconButton(
-        icon: Column(
-          mainAxisSize: MainAxisSize.min,
+    return IconButton(
+      onPressed: () => routes.navigate(routes.getByIdentifier(identifier)!),
+      icon: Padding(
+        padding: const EdgeInsets.only(top: 2),
+        child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
+          mainAxisSize: MainAxisSize.min,
           children: [
             Container(
-              padding: const EdgeInsets.symmetric(vertical: 4, horizontal: 10),
+              padding: const EdgeInsets.all(2),
               decoration: BoxDecoration(
                 color: active ? Colors.blue : null,
-                borderRadius: BorderRadius.circular(10),
+                borderRadius: BorderRadius.circular(6),
               ),
               child: Icon(
                 icon,
                 color: active ? Colors.white : null,
-                size: 18,
+                size: 13,
               ),
             ),
-            const SizedBox(height: 2),
             Txt(
               title,
               style: TextStyle(
-                fontSize: 12,
+                fontSize: 9,
                 fontWeight: FontWeight.w500,
                 color: active ? Colors.blue : null,
               ),
             ),
           ],
         ),
-        onPressed: () => routes.navigate(routes.getByIdentifier(identifier)!),
       ),
     );
   }

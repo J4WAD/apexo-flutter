@@ -35,7 +35,7 @@ class Es implements En {
     "appointments": "Rendez-vous",
     "patients": "Patients",
     "doctors": "Docteurs",
-    "labworks": "Travaux de laboratoire",
+    "labworks": "Laboratoire",
     "statistics": "Statistiques",
 
     // dashboard
