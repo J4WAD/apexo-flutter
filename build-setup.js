@@ -1,4 +1,5 @@
 const { execSync } = require("child_process");
+const os = require("os");
 const path = require("path");
 
 function execute(command) {
@@ -8,23 +9,24 @@ function execute(command) {
 
 async function setup() {
   try {
-    // Create directories with proper permissions
-    execute("mkdir -p /opt/flutter");
-    execute("mkdir -p /opt/go");
+    // Use home directory for installations
+    const HOME = os.homedir();
+    const FLUTTER_HOME = path.join(HOME, ".flutter");
 
-    // Install required tools
-    execute("apt-get update && apt-get install -y wget unzip");
+    // Create directories
+    execute(`mkdir -p ${FLUTTER_HOME}`);
 
-    // Download and install Flutter
+    // Download Flutter
     console.log("Installing Flutter...");
+    process.chdir(HOME);
     execute(
       "wget -q https://storage.googleapis.com/flutter_infra_release/releases/stable/linux/flutter_linux_3.16.5-stable.tar.xz"
     );
-    execute("tar xf flutter_linux_3.16.5-stable.tar.xz -C /opt");
-    execute("chmod -R 755 /opt/flutter");
+    execute(`tar xf flutter_linux_3.16.5-stable.tar.xz -C ${FLUTTER_HOME}`);
 
-    // Set environment
-    process.env.PATH = `${process.env.PATH}:/opt/flutter/bin`;
+    // Set environment variables
+    process.env.FLUTTER_ROOT = path.join(FLUTTER_HOME, "flutter");
+    process.env.PATH = `${process.env.FLUTTER_ROOT}/bin:${process.env.PATH}`;
 
     // Configure Flutter
     execute("flutter config --no-analytics");

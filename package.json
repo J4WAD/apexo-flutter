@@ -4,7 +4,6 @@
   "scripts": {
     "setup": "node build-setup.js",
     "build": "npm run setup && flutter build web --release",
-    "deploy": "npm run build",
     "clean": "rm -rf build/"
   },
   "dependencies": {
