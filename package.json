@@ -1,8 +1,9 @@
 {
-  "name": "flutter-web-deploy",
+  "name": "apexo-flutter",
   "version": "1.0.0",
   "scripts": {
-    "build": "node install-flutter.js && flutter build web"
+    "build": "node install-flutter.js && flutter build web",
+    "deploy": "npm run build"
   },
   "dependencies": {
     "download": "^8.0.0",
