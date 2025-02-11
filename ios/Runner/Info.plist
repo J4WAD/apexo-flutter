@@ -58,12 +58,6 @@
 	<key>NSPhotoLibraryUsageDescription</key>
 	<string>To enable access to the photo library for uploading images</string>
 
-	<key>NSCameraUsageDescription</key>
-	<string>To enable capturing images related to your patients and appointments</string>
-
-	<ke>NSMicrophoneUsageDescription</key>
-	<string>To enable microphone access when recording video</string>
-
 	<key>LSApplicationQueriesSchemes</key>
 	<array>
 		<string>tel</string>
