@@ -2,9 +2,10 @@
   "name": "apexo-flutter",
   "version": "1.0.0",
   "scripts": {
-    "prebuild": "node install-dependencies.js",
-    "build": "flutter build web",
-    "deploy": "npm run build"
+    "setup": "node build-setup.js",
+    "build": "npm run setup && flutter build web --release",
+    "deploy": "npm run build",
+    "clean": "rm -rf build/"
   },
   "dependencies": {
     "download": "^8.0.0",
