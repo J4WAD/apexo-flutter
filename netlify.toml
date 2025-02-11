@@ -1,9 +1,6 @@
 [build]
-  command = "chmod +x build.sh && ./build.sh"
   publish = "build/web"
-
-[build.environment]
-  NODE_VERSION = "16"
+  command = "echo 'Already built'"
 
 [[redirects]]
   from = "/*"
