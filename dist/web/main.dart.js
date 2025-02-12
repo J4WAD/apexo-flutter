@@ -461259,7 +461259,7 @@
       return new A.bcD(
         p,
         o,
-        n.goM(n) === "demo.dentisapp.com.com",
+        n.goM(n) === "demo.dentisapp.com",
         A.cP(!1, q)
       );
     });
