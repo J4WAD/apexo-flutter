@@ -187,7 +187,7 @@ Patient _demoPatient() {
 Appointment _demoAppointment() {
   final doctor = _savedDoctors[Random().nextInt(_savedDoctors.length)];
   final patient = _savedPatients[Random().nextInt(_savedPatients.length)];
-  final price = Random().nextInt(1000);
+  final price = 500 + Random().nextInt(14500); // 500 - 15,000 DZD
   final date = DateTime.now()
       .add(Duration(hours: Random().nextInt(24 * 30)))
       .subtract(Duration(hours: Random().nextInt(24 * 200)));
@@ -208,7 +208,7 @@ Appointment _demoAppointment() {
     "paid": future
         ? null
         : Random().nextInt(20) == 15
-            ? Random().nextInt(1500)
+            ? 500 + Random().nextInt(15500) // Partial or full payment
             : price,
   });
 }
@@ -225,7 +225,7 @@ Labwork _demoLabwork() {
     "operatorsIDs": [_savedDoctors[Random().nextInt(_savedDoctors.length)].id],
     "patientID": patient.id,
     "paid": future ? null : true,
-    "price": Random().nextInt(100),
+    "price": 1000 + Random().nextInt(9000), // 1,000 - 10,000 DZD
     "lab": lab,
     "phoneNumber": _labs[lab],
     "note": _labworkNotes[Random().nextInt(_labworkNotes.length)],
@@ -237,7 +237,7 @@ Expense _demoExpense() {
       .add(Duration(hours: Random().nextInt(24 * 30)))
       .subtract(Duration(hours: Random().nextInt(24 * 200)));
   final future = date.isAfter(DateTime.now());
-  final price = Random().nextInt(700);
+  final price = 500 + Random().nextInt(49500); // 500 - 50,000 DZD
   final receiptIssuer =
       _receiptIssuers.keys.toList()[Random().nextInt(_receiptIssuers.length)];
   return Expense.fromJson({
