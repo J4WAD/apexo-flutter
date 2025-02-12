@@ -23,11 +23,11 @@ const _storeNameLocal = "settings_local";
 
 class GlobalSettings extends Store<Setting> {
   Map<String, String> defaults = {
-    "currency_______": "USD",
+    "currency_______": "DA",
     "phone__________": "1234567890",
     "prescriptionFot": "",
     "permissions____": jsonEncode([false, true, true, true, true, false]),
-    "start_day_of_wk": "monday",
+    "start_day_of_wk": "Saturday",
   };
 
   @override
@@ -54,7 +54,8 @@ class GlobalSettings extends Store<Setting> {
     login.activators[_storeNameGlobal] = () async {
       await loaded;
 
-      local = SaveLocal(name: _storeNameGlobal, uniqueId: simpleHash(login.url));
+      local =
+          SaveLocal(name: _storeNameGlobal, uniqueId: simpleHash(login.url));
       await deleteMemoryAndLoadFromPersistence();
 
       remote = SaveRemote(
@@ -85,7 +86,8 @@ class GlobalSettings extends Store<Setting> {
             permissions.reloadFromRemote()
           ]);
         };
-        networkActions.reconnectCallbacks[_storeNameGlobal] = remote!.checkOnline;
+        networkActions.reconnectCallbacks[_storeNameGlobal] =
+            remote!.checkOnline;
 
         network.onOnline[_storeNameGlobal] = synchronize;
         network.onOffline[_storeNameGlobal] = cancelRealtimeSub;
@@ -113,7 +115,8 @@ class LocalSettings extends ObservablePersistingObject {
   fromJson(Map<String, dynamic> json) {
     selectedLocale = json["selectedLocale"] ?? selectedLocale;
     dateFormat = json["dateFormat"] ?? dateFormat;
-    selectedTheme = json["selectedTheme"] == 1 ? ThemeMode.dark : ThemeMode.light;
+    selectedTheme =
+        json["selectedTheme"] == 1 ? ThemeMode.dark : ThemeMode.light;
   }
 
   @override
