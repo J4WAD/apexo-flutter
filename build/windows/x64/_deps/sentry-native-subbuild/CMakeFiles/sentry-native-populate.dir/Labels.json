@@ -1,0 +1,46 @@
+{
+	"sources" : 
+	[
+		{
+			"file" : "C:/Users/Programmation/Desktop/NextJS/apexo2/apexo-flutter/build/windows/x64/_deps/sentry-native-subbuild/CMakeFiles/sentry-native-populate"
+		},
+		{
+			"file" : "C:/Users/Programmation/Desktop/NextJS/apexo2/apexo-flutter/build/windows/x64/_deps/sentry-native-subbuild/CMakeFiles/9e1410cfc2f2e7755a466a4c5296e7dc/sentry-native-populate.rule"
+		},
+		{
+			"file" : "C:/Users/Programmation/Desktop/NextJS/apexo2/apexo-flutter/build/windows/x64/_deps/sentry-native-subbuild/CMakeFiles/b8825237f2ca169639aa22e07185ecb1/sentry-native-populate-complete.rule"
+		},
+		{
+			"file" : "C:/Users/Programmation/Desktop/NextJS/apexo2/apexo-flutter/build/windows/x64/_deps/sentry-native-subbuild/CMakeFiles/b912b5a9b9dd036ca2d5159a296b9545/sentry-native-populate-build.rule"
+		},
+		{
+			"file" : "C:/Users/Programmation/Desktop/NextJS/apexo2/apexo-flutter/build/windows/x64/_deps/sentry-native-subbuild/CMakeFiles/b912b5a9b9dd036ca2d5159a296b9545/sentry-native-populate-configure.rule"
+		},
+		{
+			"file" : "C:/Users/Programmation/Desktop/NextJS/apexo2/apexo-flutter/build/windows/x64/_deps/sentry-native-subbuild/CMakeFiles/b912b5a9b9dd036ca2d5159a296b9545/sentry-native-populate-download.rule"
+		},
+		{
+			"file" : "C:/Users/Programmation/Desktop/NextJS/apexo2/apexo-flutter/build/windows/x64/_deps/sentry-native-subbuild/CMakeFiles/b912b5a9b9dd036ca2d5159a296b9545/sentry-native-populate-install.rule"
+		},
+		{
+			"file" : "C:/Users/Programmation/Desktop/NextJS/apexo2/apexo-flutter/build/windows/x64/_deps/sentry-native-subbuild/CMakeFiles/b912b5a9b9dd036ca2d5159a296b9545/sentry-native-populate-mkdir.rule"
+		},
+		{
+			"file" : "C:/Users/Programmation/Desktop/NextJS/apexo2/apexo-flutter/build/windows/x64/_deps/sentry-native-subbuild/CMakeFiles/b912b5a9b9dd036ca2d5159a296b9545/sentry-native-populate-patch.rule"
+		},
+		{
+			"file" : "C:/Users/Programmation/Desktop/NextJS/apexo2/apexo-flutter/build/windows/x64/_deps/sentry-native-subbuild/CMakeFiles/b912b5a9b9dd036ca2d5159a296b9545/sentry-native-populate-test.rule"
+		},
+		{
+			"file" : "C:/Users/Programmation/Desktop/NextJS/apexo2/apexo-flutter/build/windows/x64/_deps/sentry-native-subbuild/CMakeFiles/b912b5a9b9dd036ca2d5159a296b9545/sentry-native-populate-update.rule"
+		}
+	],
+	"target" : 
+	{
+		"labels" : 
+		[
+			"sentry-native-populate"
+		],
+		"name" : "sentry-native-populate"
+	}
+}

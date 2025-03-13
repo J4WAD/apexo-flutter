@@ -1,0 +1,46 @@
+{
+	"sources" : 
+	[
+		{
+			"file" : "C:/Users/Programmation/Desktop/NextJS/apexo2/apexo-flutter/build/windows/x64/pdfium-download/CMakeFiles/pdfium-download"
+		},
+		{
+			"file" : "C:/Users/Programmation/Desktop/NextJS/apexo2/apexo-flutter/build/windows/x64/pdfium-download/CMakeFiles/105d13e66bf24102c6ede200b3a7e7bd/pdfium-download.rule"
+		},
+		{
+			"file" : "C:/Users/Programmation/Desktop/NextJS/apexo2/apexo-flutter/build/windows/x64/pdfium-download/CMakeFiles/ba98441d8140b64e8dd112456af509fd/pdfium-download-complete.rule"
+		},
+		{
+			"file" : "C:/Users/Programmation/Desktop/NextJS/apexo2/apexo-flutter/build/windows/x64/pdfium-download/CMakeFiles/e1f2682f35f1083ebe64924bc83bd971/pdfium-download-build.rule"
+		},
+		{
+			"file" : "C:/Users/Programmation/Desktop/NextJS/apexo2/apexo-flutter/build/windows/x64/pdfium-download/CMakeFiles/e1f2682f35f1083ebe64924bc83bd971/pdfium-download-configure.rule"
+		},
+		{
+			"file" : "C:/Users/Programmation/Desktop/NextJS/apexo2/apexo-flutter/build/windows/x64/pdfium-download/CMakeFiles/e1f2682f35f1083ebe64924bc83bd971/pdfium-download-download.rule"
+		},
+		{
+			"file" : "C:/Users/Programmation/Desktop/NextJS/apexo2/apexo-flutter/build/windows/x64/pdfium-download/CMakeFiles/e1f2682f35f1083ebe64924bc83bd971/pdfium-download-install.rule"
+		},
+		{
+			"file" : "C:/Users/Programmation/Desktop/NextJS/apexo2/apexo-flutter/build/windows/x64/pdfium-download/CMakeFiles/e1f2682f35f1083ebe64924bc83bd971/pdfium-download-mkdir.rule"
+		},
+		{
+			"file" : "C:/Users/Programmation/Desktop/NextJS/apexo2/apexo-flutter/build/windows/x64/pdfium-download/CMakeFiles/e1f2682f35f1083ebe64924bc83bd971/pdfium-download-patch.rule"
+		},
+		{
+			"file" : "C:/Users/Programmation/Desktop/NextJS/apexo2/apexo-flutter/build/windows/x64/pdfium-download/CMakeFiles/e1f2682f35f1083ebe64924bc83bd971/pdfium-download-test.rule"
+		},
+		{
+			"file" : "C:/Users/Programmation/Desktop/NextJS/apexo2/apexo-flutter/build/windows/x64/pdfium-download/CMakeFiles/e1f2682f35f1083ebe64924bc83bd971/pdfium-download-update.rule"
+		}
+	],
+	"target" : 
+	{
+		"labels" : 
+		[
+			"pdfium-download"
+		],
+		"name" : "pdfium-download"
+	}
+}

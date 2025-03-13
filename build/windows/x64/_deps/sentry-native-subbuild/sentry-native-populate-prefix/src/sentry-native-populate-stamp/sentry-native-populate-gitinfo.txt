@@ -1,0 +1,3 @@
+repository='https://github.com/getsentry/sentry-native'
+module=''
+tag='origin'

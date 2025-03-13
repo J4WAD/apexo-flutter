@@ -1,0 +1,162 @@
+^C:\USERS\PROGRAMMATION\DESKTOP\NEXTJS\APEXO2\APEXO-FLUTTER\BUILD\WINDOWS\X64\_DEPS\SENTRY-NATIVE-SUBBUILD\CMAKEFILES\B912B5A9B9DD036CA2D5159A296B9545\SENTRY-NATIVE-POPULATE-MKDIR.RULE
+setlocal
+"C:\Program Files (x86)\Microsoft Visual Studio\2019\BuildTools\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E make_directory C:/Users/Programmation/Desktop/NextJS/apexo2/apexo-flutter/build/windows/x64/_deps/sentry-native-src
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files (x86)\Microsoft Visual Studio\2019\BuildTools\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E make_directory C:/Users/Programmation/Desktop/NextJS/apexo2/apexo-flutter/build/windows/x64/_deps/sentry-native-build
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files (x86)\Microsoft Visual Studio\2019\BuildTools\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E make_directory C:/Users/Programmation/Desktop/NextJS/apexo2/apexo-flutter/build/windows/x64/_deps/sentry-native-subbuild/sentry-native-populate-prefix
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files (x86)\Microsoft Visual Studio\2019\BuildTools\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E make_directory C:/Users/Programmation/Desktop/NextJS/apexo2/apexo-flutter/build/windows/x64/_deps/sentry-native-subbuild/sentry-native-populate-prefix/tmp
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files (x86)\Microsoft Visual Studio\2019\BuildTools\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E make_directory C:/Users/Programmation/Desktop/NextJS/apexo2/apexo-flutter/build/windows/x64/_deps/sentry-native-subbuild/sentry-native-populate-prefix/src/sentry-native-populate-stamp/Debug
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files (x86)\Microsoft Visual Studio\2019\BuildTools\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E make_directory C:/Users/Programmation/Desktop/NextJS/apexo2/apexo-flutter/build/windows/x64/_deps/sentry-native-subbuild/sentry-native-populate-prefix/src
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files (x86)\Microsoft Visual Studio\2019\BuildTools\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E make_directory C:/Users/Programmation/Desktop/NextJS/apexo2/apexo-flutter/build/windows/x64/_deps/sentry-native-subbuild/sentry-native-populate-prefix/src/sentry-native-populate-stamp
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files (x86)\Microsoft Visual Studio\2019\BuildTools\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E touch C:/Users/Programmation/Desktop/NextJS/apexo2/apexo-flutter/build/windows/x64/_deps/sentry-native-subbuild/sentry-native-populate-prefix/src/sentry-native-populate-stamp/Debug/sentry-native-populate-mkdir
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^C:\USERS\PROGRAMMATION\DESKTOP\NEXTJS\APEXO2\APEXO-FLUTTER\BUILD\WINDOWS\X64\_DEPS\SENTRY-NATIVE-SUBBUILD\CMAKEFILES\B912B5A9B9DD036CA2D5159A296B9545\SENTRY-NATIVE-POPULATE-DOWNLOAD.RULE
+setlocal
+cd C:\Users\Programmation\Desktop\NextJS\apexo2\apexo-flutter\build\windows\x64\_deps
+if %errorlevel% neq 0 goto :cmEnd
+C:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files (x86)\Microsoft Visual Studio\2019\BuildTools\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -P C:/Users/Programmation/Desktop/NextJS/apexo2/apexo-flutter/build/windows/x64/_deps/sentry-native-subbuild/sentry-native-populate-prefix/tmp/sentry-native-populate-gitclone.cmake
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files (x86)\Microsoft Visual Studio\2019\BuildTools\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E touch C:/Users/Programmation/Desktop/NextJS/apexo2/apexo-flutter/build/windows/x64/_deps/sentry-native-subbuild/sentry-native-populate-prefix/src/sentry-native-populate-stamp/Debug/sentry-native-populate-download
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^C:\USERS\PROGRAMMATION\DESKTOP\NEXTJS\APEXO2\APEXO-FLUTTER\BUILD\WINDOWS\X64\_DEPS\SENTRY-NATIVE-SUBBUILD\CMAKEFILES\B912B5A9B9DD036CA2D5159A296B9545\SENTRY-NATIVE-POPULATE-UPDATE.RULE
+setlocal
+cd C:\Users\Programmation\Desktop\NextJS\apexo2\apexo-flutter\build\windows\x64\_deps\sentry-native-src
+if %errorlevel% neq 0 goto :cmEnd
+C:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files (x86)\Microsoft Visual Studio\2019\BuildTools\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -P C:/Users/Programmation/Desktop/NextJS/apexo2/apexo-flutter/build/windows/x64/_deps/sentry-native-subbuild/sentry-native-populate-prefix/tmp/sentry-native-populate-gitupdate.cmake
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^C:\USERS\PROGRAMMATION\DESKTOP\NEXTJS\APEXO2\APEXO-FLUTTER\BUILD\WINDOWS\X64\_DEPS\SENTRY-NATIVE-SUBBUILD\CMAKEFILES\B912B5A9B9DD036CA2D5159A296B9545\SENTRY-NATIVE-POPULATE-PATCH.RULE
+setlocal
+"C:\Program Files (x86)\Microsoft Visual Studio\2019\BuildTools\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E echo_append
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files (x86)\Microsoft Visual Studio\2019\BuildTools\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E touch C:/Users/Programmation/Desktop/NextJS/apexo2/apexo-flutter/build/windows/x64/_deps/sentry-native-subbuild/sentry-native-populate-prefix/src/sentry-native-populate-stamp/Debug/sentry-native-populate-patch
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^C:\USERS\PROGRAMMATION\DESKTOP\NEXTJS\APEXO2\APEXO-FLUTTER\BUILD\WINDOWS\X64\_DEPS\SENTRY-NATIVE-SUBBUILD\CMAKEFILES\B912B5A9B9DD036CA2D5159A296B9545\SENTRY-NATIVE-POPULATE-CONFIGURE.RULE
+setlocal
+cd C:\Users\Programmation\Desktop\NextJS\apexo2\apexo-flutter\build\windows\x64\_deps\sentry-native-build
+if %errorlevel% neq 0 goto :cmEnd
+C:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files (x86)\Microsoft Visual Studio\2019\BuildTools\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E echo_append
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files (x86)\Microsoft Visual Studio\2019\BuildTools\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E touch C:/Users/Programmation/Desktop/NextJS/apexo2/apexo-flutter/build/windows/x64/_deps/sentry-native-subbuild/sentry-native-populate-prefix/src/sentry-native-populate-stamp/Debug/sentry-native-populate-configure
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^C:\USERS\PROGRAMMATION\DESKTOP\NEXTJS\APEXO2\APEXO-FLUTTER\BUILD\WINDOWS\X64\_DEPS\SENTRY-NATIVE-SUBBUILD\CMAKEFILES\B912B5A9B9DD036CA2D5159A296B9545\SENTRY-NATIVE-POPULATE-BUILD.RULE
+setlocal
+cd C:\Users\Programmation\Desktop\NextJS\apexo2\apexo-flutter\build\windows\x64\_deps\sentry-native-build
+if %errorlevel% neq 0 goto :cmEnd
+C:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files (x86)\Microsoft Visual Studio\2019\BuildTools\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E echo_append
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files (x86)\Microsoft Visual Studio\2019\BuildTools\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E touch C:/Users/Programmation/Desktop/NextJS/apexo2/apexo-flutter/build/windows/x64/_deps/sentry-native-subbuild/sentry-native-populate-prefix/src/sentry-native-populate-stamp/Debug/sentry-native-populate-build
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^C:\USERS\PROGRAMMATION\DESKTOP\NEXTJS\APEXO2\APEXO-FLUTTER\BUILD\WINDOWS\X64\_DEPS\SENTRY-NATIVE-SUBBUILD\CMAKEFILES\B912B5A9B9DD036CA2D5159A296B9545\SENTRY-NATIVE-POPULATE-INSTALL.RULE
+setlocal
+cd C:\Users\Programmation\Desktop\NextJS\apexo2\apexo-flutter\build\windows\x64\_deps\sentry-native-build
+if %errorlevel% neq 0 goto :cmEnd
+C:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files (x86)\Microsoft Visual Studio\2019\BuildTools\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E echo_append
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files (x86)\Microsoft Visual Studio\2019\BuildTools\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E touch C:/Users/Programmation/Desktop/NextJS/apexo2/apexo-flutter/build/windows/x64/_deps/sentry-native-subbuild/sentry-native-populate-prefix/src/sentry-native-populate-stamp/Debug/sentry-native-populate-install
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^C:\USERS\PROGRAMMATION\DESKTOP\NEXTJS\APEXO2\APEXO-FLUTTER\BUILD\WINDOWS\X64\_DEPS\SENTRY-NATIVE-SUBBUILD\CMAKEFILES\B912B5A9B9DD036CA2D5159A296B9545\SENTRY-NATIVE-POPULATE-TEST.RULE
+setlocal
+cd C:\Users\Programmation\Desktop\NextJS\apexo2\apexo-flutter\build\windows\x64\_deps\sentry-native-build
+if %errorlevel% neq 0 goto :cmEnd
+C:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files (x86)\Microsoft Visual Studio\2019\BuildTools\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E echo_append
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files (x86)\Microsoft Visual Studio\2019\BuildTools\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E touch C:/Users/Programmation/Desktop/NextJS/apexo2/apexo-flutter/build/windows/x64/_deps/sentry-native-subbuild/sentry-native-populate-prefix/src/sentry-native-populate-stamp/Debug/sentry-native-populate-test
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^C:\USERS\PROGRAMMATION\DESKTOP\NEXTJS\APEXO2\APEXO-FLUTTER\BUILD\WINDOWS\X64\_DEPS\SENTRY-NATIVE-SUBBUILD\CMAKEFILES\B8825237F2CA169639AA22E07185ECB1\SENTRY-NATIVE-POPULATE-COMPLETE.RULE
+setlocal
+"C:\Program Files (x86)\Microsoft Visual Studio\2019\BuildTools\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E make_directory C:/Users/Programmation/Desktop/NextJS/apexo2/apexo-flutter/build/windows/x64/_deps/sentry-native-subbuild/CMakeFiles/Debug
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files (x86)\Microsoft Visual Studio\2019\BuildTools\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E touch C:/Users/Programmation/Desktop/NextJS/apexo2/apexo-flutter/build/windows/x64/_deps/sentry-native-subbuild/CMakeFiles/Debug/sentry-native-populate-complete
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files (x86)\Microsoft Visual Studio\2019\BuildTools\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E touch C:/Users/Programmation/Desktop/NextJS/apexo2/apexo-flutter/build/windows/x64/_deps/sentry-native-subbuild/sentry-native-populate-prefix/src/sentry-native-populate-stamp/Debug/sentry-native-populate-done
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^C:\USERS\PROGRAMMATION\DESKTOP\NEXTJS\APEXO2\APEXO-FLUTTER\BUILD\WINDOWS\X64\_DEPS\SENTRY-NATIVE-SUBBUILD\CMAKEFILES\9E1410CFC2F2E7755A466A4C5296E7DC\SENTRY-NATIVE-POPULATE.RULE
+setlocal
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^C:\USERS\PROGRAMMATION\DESKTOP\NEXTJS\APEXO2\APEXO-FLUTTER\BUILD\WINDOWS\X64\_DEPS\SENTRY-NATIVE-SUBBUILD\CMAKELISTS.TXT
+setlocal
+"C:\Program Files (x86)\Microsoft Visual Studio\2019\BuildTools\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -SC:/Users/Programmation/Desktop/NextJS/apexo2/apexo-flutter/build/windows/x64/_deps/sentry-native-subbuild -BC:/Users/Programmation/Desktop/NextJS/apexo2/apexo-flutter/build/windows/x64/_deps/sentry-native-subbuild --check-stamp-file C:/Users/Programmation/Desktop/NextJS/apexo2/apexo-flutter/build/windows/x64/_deps/sentry-native-subbuild/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd

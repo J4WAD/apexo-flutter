@@ -1,0 +1,10 @@
+^C:\USERS\PROGRAMMATION\DESKTOP\NEXTJS\APEXO2\APEXO-FLUTTER\BUILD\WINDOWS\X64\CMAKEFILES\B1E74F7026B965DD9A676E842C64E02A\GENERATE.STAMP.RULE
+setlocal
+"C:\Program Files (x86)\Microsoft Visual Studio\2019\BuildTools\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -SC:/Users/Programmation/Desktop/NextJS/apexo2/apexo-flutter/windows -BC:/Users/Programmation/Desktop/NextJS/apexo2/apexo-flutter/build/windows/x64 --check-stamp-list CMakeFiles/generate.stamp.list --vs-solution-file C:/Users/Programmation/Desktop/NextJS/apexo2/apexo-flutter/build/windows/x64/Dentisapp.sln
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd

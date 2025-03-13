@@ -1,0 +1,209 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="C:\Users\Programmation\Desktop\NextJS\apexo2\apexo-flutter\build\windows\x64\_deps\sentry-native-src\vendor\mpack.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Programmation\Desktop\NextJS\apexo2\apexo-flutter\build\windows\x64\_deps\sentry-native-src\src\sentry_alloc.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Programmation\Desktop\NextJS\apexo2\apexo-flutter\build\windows\x64\_deps\sentry-native-src\src\sentry_backend.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Programmation\Desktop\NextJS\apexo2\apexo-flutter\build\windows\x64\_deps\sentry-native-src\src\sentry_core.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Programmation\Desktop\NextJS\apexo2\apexo-flutter\build\windows\x64\_deps\sentry-native-src\src\sentry_database.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Programmation\Desktop\NextJS\apexo2\apexo-flutter\build\windows\x64\_deps\sentry-native-src\src\sentry_envelope.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Programmation\Desktop\NextJS\apexo2\apexo-flutter\build\windows\x64\_deps\sentry-native-src\src\sentry_info.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Programmation\Desktop\NextJS\apexo2\apexo-flutter\build\windows\x64\_deps\sentry-native-src\src\sentry_json.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Programmation\Desktop\NextJS\apexo2\apexo-flutter\build\windows\x64\_deps\sentry-native-src\src\sentry_logger.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Programmation\Desktop\NextJS\apexo2\apexo-flutter\build\windows\x64\_deps\sentry-native-src\src\sentry_options.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Programmation\Desktop\NextJS\apexo2\apexo-flutter\build\windows\x64\_deps\sentry-native-src\src\sentry_os.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Programmation\Desktop\NextJS\apexo2\apexo-flutter\build\windows\x64\_deps\sentry-native-src\src\sentry_random.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Programmation\Desktop\NextJS\apexo2\apexo-flutter\build\windows\x64\_deps\sentry-native-src\src\sentry_ratelimiter.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Programmation\Desktop\NextJS\apexo2\apexo-flutter\build\windows\x64\_deps\sentry-native-src\src\sentry_scope.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Programmation\Desktop\NextJS\apexo2\apexo-flutter\build\windows\x64\_deps\sentry-native-src\src\sentry_session.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Programmation\Desktop\NextJS\apexo2\apexo-flutter\build\windows\x64\_deps\sentry-native-src\src\sentry_slice.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Programmation\Desktop\NextJS\apexo2\apexo-flutter\build\windows\x64\_deps\sentry-native-src\src\sentry_string.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Programmation\Desktop\NextJS\apexo2\apexo-flutter\build\windows\x64\_deps\sentry-native-src\src\sentry_sync.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Programmation\Desktop\NextJS\apexo2\apexo-flutter\build\windows\x64\_deps\sentry-native-src\src\sentry_transport.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Programmation\Desktop\NextJS\apexo2\apexo-flutter\build\windows\x64\_deps\sentry-native-src\src\sentry_utils.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Programmation\Desktop\NextJS\apexo2\apexo-flutter\build\windows\x64\_deps\sentry-native-src\src\sentry_uuid.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Programmation\Desktop\NextJS\apexo2\apexo-flutter\build\windows\x64\_deps\sentry-native-src\src\sentry_value.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Programmation\Desktop\NextJS\apexo2\apexo-flutter\build\windows\x64\_deps\sentry-native-src\src\sentry_tracing.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Programmation\Desktop\NextJS\apexo2\apexo-flutter\build\windows\x64\_deps\sentry-native-src\src\path\sentry_path.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Programmation\Desktop\NextJS\apexo2\apexo-flutter\build\windows\x64\_deps\sentry-native-src\src\transports\sentry_disk_transport.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Programmation\Desktop\NextJS\apexo2\apexo-flutter\build\windows\x64\_deps\sentry-native-src\src\transports\sentry_function_transport.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Programmation\Desktop\NextJS\apexo2\apexo-flutter\build\windows\x64\_deps\sentry-native-src\src\unwinder\sentry_unwinder.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Programmation\Desktop\NextJS\apexo2\apexo-flutter\build\windows\x64\_deps\sentry-native-src\src\sentry_windows_dbghelp.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Programmation\Desktop\NextJS\apexo2\apexo-flutter\build\windows\x64\_deps\sentry-native-src\src\path\sentry_path_windows.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Programmation\Desktop\NextJS\apexo2\apexo-flutter\build\windows\x64\_deps\sentry-native-src\src\symbolizer\sentry_symbolizer_windows.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Programmation\Desktop\NextJS\apexo2\apexo-flutter\build\windows\x64\_deps\sentry-native-src\src\modulefinder\sentry_modulefinder_windows.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Programmation\Desktop\NextJS\apexo2\apexo-flutter\build\windows\x64\_deps\sentry-native-src\src\transports\sentry_transport_winhttp.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Programmation\Desktop\NextJS\apexo2\apexo-flutter\build\windows\x64\_deps\sentry-native-src\src\backends\sentry_backend_none.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Programmation\Desktop\NextJS\apexo2\apexo-flutter\build\windows\x64\_deps\sentry-native-src\src\unwinder\sentry_unwinder_dbghelp.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="C:\Users\Programmation\Desktop\NextJS\apexo2\apexo-flutter\build\windows\x64\_deps\sentry-native-src\include\sentry.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Programmation\Desktop\NextJS\apexo2\apexo-flutter\build\windows\x64\_deps\sentry-native-src\src\sentry_alloc.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Programmation\Desktop\NextJS\apexo2\apexo-flutter\build\windows\x64\_deps\sentry-native-src\src\sentry_backend.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Programmation\Desktop\NextJS\apexo2\apexo-flutter\build\windows\x64\_deps\sentry-native-src\src\sentry_boot.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Programmation\Desktop\NextJS\apexo2\apexo-flutter\build\windows\x64\_deps\sentry-native-src\src\sentry_core.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Programmation\Desktop\NextJS\apexo2\apexo-flutter\build\windows\x64\_deps\sentry-native-src\src\sentry_database.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Programmation\Desktop\NextJS\apexo2\apexo-flutter\build\windows\x64\_deps\sentry-native-src\src\sentry_envelope.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Programmation\Desktop\NextJS\apexo2\apexo-flutter\build\windows\x64\_deps\sentry-native-src\src\sentry_json.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Programmation\Desktop\NextJS\apexo2\apexo-flutter\build\windows\x64\_deps\sentry-native-src\src\sentry_logger.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Programmation\Desktop\NextJS\apexo2\apexo-flutter\build\windows\x64\_deps\sentry-native-src\src\sentry_options.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Programmation\Desktop\NextJS\apexo2\apexo-flutter\build\windows\x64\_deps\sentry-native-src\src\sentry_os.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Programmation\Desktop\NextJS\apexo2\apexo-flutter\build\windows\x64\_deps\sentry-native-src\src\sentry_path.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Programmation\Desktop\NextJS\apexo2\apexo-flutter\build\windows\x64\_deps\sentry-native-src\src\sentry_random.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Programmation\Desktop\NextJS\apexo2\apexo-flutter\build\windows\x64\_deps\sentry-native-src\src\sentry_ratelimiter.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Programmation\Desktop\NextJS\apexo2\apexo-flutter\build\windows\x64\_deps\sentry-native-src\src\sentry_sampling_context.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Programmation\Desktop\NextJS\apexo2\apexo-flutter\build\windows\x64\_deps\sentry-native-src\src\sentry_scope.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Programmation\Desktop\NextJS\apexo2\apexo-flutter\build\windows\x64\_deps\sentry-native-src\src\sentry_session.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Programmation\Desktop\NextJS\apexo2\apexo-flutter\build\windows\x64\_deps\sentry-native-src\src\sentry_slice.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Programmation\Desktop\NextJS\apexo2\apexo-flutter\build\windows\x64\_deps\sentry-native-src\src\sentry_string.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Programmation\Desktop\NextJS\apexo2\apexo-flutter\build\windows\x64\_deps\sentry-native-src\src\sentry_symbolizer.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Programmation\Desktop\NextJS\apexo2\apexo-flutter\build\windows\x64\_deps\sentry-native-src\src\sentry_sync.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Programmation\Desktop\NextJS\apexo2\apexo-flutter\build\windows\x64\_deps\sentry-native-src\src\sentry_transport.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Programmation\Desktop\NextJS\apexo2\apexo-flutter\build\windows\x64\_deps\sentry-native-src\src\sentry_utils.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Programmation\Desktop\NextJS\apexo2\apexo-flutter\build\windows\x64\_deps\sentry-native-src\src\sentry_uuid.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Programmation\Desktop\NextJS\apexo2\apexo-flutter\build\windows\x64\_deps\sentry-native-src\src\sentry_value.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Programmation\Desktop\NextJS\apexo2\apexo-flutter\build\windows\x64\_deps\sentry-native-src\src\sentry_tracing.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Programmation\Desktop\NextJS\apexo2\apexo-flutter\build\windows\x64\_deps\sentry-native-src\src\transports\sentry_disk_transport.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Programmation\Desktop\NextJS\apexo2\apexo-flutter\build\windows\x64\_deps\sentry-native-src\src\sentry_windows_dbghelp.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\Programmation\Desktop\NextJS\apexo2\apexo-flutter\build\windows\x64\_deps\sentry-native-src\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="C:\Users\Programmation\Desktop\NextJS\apexo2\apexo-flutter\build\windows\x64\_deps\sentry-native-build\sentry.rc">
+      <Filter>Source Files</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{E8899696-6658-32A0-B5E0-B27DAF59D8FB}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{FB4A7D9A-4BC3-381E-8A50-4233344F2E7C}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

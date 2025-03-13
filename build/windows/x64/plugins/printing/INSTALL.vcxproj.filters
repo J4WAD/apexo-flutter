@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\Programmation\Desktop\NextJS\apexo2\apexo-flutter\build\windows\x64\CMakeFiles\5e6f1ea6797efd32012711075a43e9f2\INSTALL_force.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="CMake Rules">
+      <UniqueIdentifier>{E9C82DAC-6E4E-389B-8028-C26B758DAB9A}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

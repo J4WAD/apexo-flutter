@@ -1,0 +1,28 @@
+^C:\USERS\PROGRAMMATION\DESKTOP\NEXTJS\APEXO2\APEXO-FLUTTER\BUILD\WINDOWS\X64\CMAKEFILES\C6E940C6DEDDD3302A6BACDF5173C375\FLUTTER_WINDOWS.DLL.RULE
+setlocal
+"C:\Program Files (x86)\Microsoft Visual Studio\2019\BuildTools\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E env FLUTTER_ROOT=C:\flutter PROJECT_DIR=C:\Users\Programmation\Desktop\NextJS\apexo2\apexo-flutter FLUTTER_ROOT=C:\flutter FLUTTER_EPHEMERAL_DIR=C:\Users\Programmation\Desktop\NextJS\apexo2\apexo-flutter\windows\flutter\ephemeral PROJECT_DIR=C:\Users\Programmation\Desktop\NextJS\apexo2\apexo-flutter FLUTTER_TARGET=lib\main.dart DART_OBFUSCATION=false TRACK_WIDGET_CREATION=true TREE_SHAKE_ICONS=true PACKAGE_CONFIG=C:\Users\Programmation\Desktop\NextJS\apexo2\apexo-flutter\.dart_tool\package_config.json C:/flutter/packages/flutter_tools/bin/tool_backend.bat windows-x64 Release
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^C:\USERS\PROGRAMMATION\DESKTOP\NEXTJS\APEXO2\APEXO-FLUTTER\BUILD\WINDOWS\X64\CMAKEFILES\EE7EF465F03590E266428121CAB12745\FLUTTER_ASSEMBLE.RULE
+setlocal
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^C:\USERS\PROGRAMMATION\DESKTOP\NEXTJS\APEXO2\APEXO-FLUTTER\WINDOWS\FLUTTER\CMAKELISTS.TXT
+setlocal
+"C:\Program Files (x86)\Microsoft Visual Studio\2019\BuildTools\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -SC:/Users/Programmation/Desktop/NextJS/apexo2/apexo-flutter/windows -BC:/Users/Programmation/Desktop/NextJS/apexo2/apexo-flutter/build/windows/x64 --check-stamp-file C:/Users/Programmation/Desktop/NextJS/apexo2/apexo-flutter/build/windows/x64/flutter/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
