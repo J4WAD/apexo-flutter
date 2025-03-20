@@ -1,21 +1,7 @@
 # Build stage
-FROM debian:latest AS build-env
+FROM ghcr.io/cirruslabs/flutter:stable AS build-env
 
-# Install Flutter dependencies
-RUN apt-get update && apt-get install -y \
-    curl \
-    git \
-    unzip \
-    xz-utils \
-    libglu1-mesa
-
-# Clone Flutter repository
-RUN git clone https://github.com/flutter/flutter.git /flutter
-ENV PATH="/flutter/bin:${PATH}"
-
-# Set up Flutter and web support
-RUN flutter channel stable
-RUN flutter upgrade
+# Set up web support
 RUN flutter config --enable-web
 
 # Copy app source code
