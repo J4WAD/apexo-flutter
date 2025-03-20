@@ -4,6 +4,8 @@ import 'package:apexo/core/multi_stream_builder.dart';
 import 'package:apexo/services/archived.dart';
 import 'package:apexo/utils/color_based_on_payment.dart';
 import 'package:apexo/services/localization/locale.dart';
+import 'package:url_launcher/url_launcher.dart';
+
 import 'package:apexo/utils/print/print_link.dart';
 import 'package:apexo/common_widgets/appointment_card.dart';
 import 'package:apexo/common_widgets/call_button.dart';
@@ -24,7 +26,9 @@ Future<Patient> openPatient([Patient? patient]) {
     item: editingCopy,
     store: patients,
     icon: FluentIcons.medication_admin,
-    title: patients.get(editingCopy.id) == null ? txt("newPatient") : editingCopy.title,
+    title: patients.get(editingCopy.id) == null
+        ? txt("newPatient")
+        : editingCopy.title,
     tabs: [
       PanelTab(
         title: txt("patientDetails"),
@@ -71,7 +75,11 @@ class _PrintQRButton extends StatelessWidget {
           children: [
             FilledButton(
                 child: Row(
-                  children: [const Icon(FluentIcons.print), const SizedBox(width: 5), Txt(txt("printQR"))],
+                  children: [
+                    const Icon(FluentIcons.print),
+                    const SizedBox(width: 5),
+                    Txt(txt("printQR"))
+                  ],
                 ),
                 onPressed: () {
                   printingQRCode(
@@ -91,6 +99,16 @@ class _PrintQRButton extends StatelessWidget {
 class _PatientWebPage extends StatelessWidget {
   final Patient patient;
   const _PatientWebPage(this.patient);
+
+  void _launchURL(String url) async {
+    final uri = Uri.parse(url);
+    if (await canLaunchUrl(uri)) {
+      await launchUrl(uri);
+    } else {
+      debugPrint('Could not launch $url');
+    }
+  }
+
   @override
   Widget build(BuildContext context) {
     return Column(children: [
@@ -104,7 +122,24 @@ class _PatientWebPage extends StatelessWidget {
           border: Border.all(color: Colors.grey),
           borderRadius: BorderRadius.circular(5),
         ),
-        child: SelectableText(patient.webPageLink),
+        child: Row(
+          mainAxisAlignment: MainAxisAlignment.spaceBetween,
+          children: [
+            Expanded(
+              child: SelectableText(patient.webPageLink),
+            ),
+            MouseRegion(
+              cursor: SystemMouseCursors.click,
+              child: GestureDetector(
+                onTap: () => _launchURL(patient.webPageLink),
+                child: const Padding(
+                  padding: EdgeInsets.all(8.0),
+                  child: Icon(FluentIcons.open_in_new_window, size: 16),
+                ),
+              ),
+            ),
+          ],
+        ),
       ),
       QRLink(link: patient.webPageLink)
     ]);
@@ -129,8 +164,10 @@ class _PatientAppointments extends StatelessWidget {
                       final appointment = patient.allAppointments[index];
                       String? difference;
                       if (patient.allAppointments.last != appointment) {
-                        int differenceInDays =
-                            appointment.date.difference(patient.allAppointments[index + 1].date).inDays.abs();
+                        int differenceInDays = appointment.date
+                            .difference(patient.allAppointments[index + 1].date)
+                            .inDays
+                            .abs();
 
                         difference =
                             "${txt("after")} $differenceInDays ${txt("day${(differenceInDays > 1) ? "s" : ""}")}";
@@ -147,7 +184,8 @@ class _PatientAppointments extends StatelessWidget {
                     Padding(
                       padding: const EdgeInsets.fromLTRB(10, 10, 12, 50),
                       child: Acrylic(
-                        shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(5)),
+                        shape: RoundedRectangleBorder(
+                            borderRadius: BorderRadius.circular(5)),
                         elevation: 50,
                         child: Container(
                           padding: const EdgeInsets.all(10),
@@ -157,7 +195,9 @@ class _PatientAppointments extends StatelessWidget {
                               boxShadow: kElevationToShadow[4],
                               border: Border(
                                   top: BorderSide(
-                                color: (colorBasedOnPayments(patient.paymentsMade, patient.pricesGiven) ??
+                                color: (colorBasedOnPayments(
+                                            patient.paymentsMade,
+                                            patient.pricesGiven) ??
                                         FluentTheme.of(context).cardColor)
                                     .withValues(alpha: 0.3),
                                 width: 5,
@@ -165,10 +205,14 @@ class _PatientAppointments extends StatelessWidget {
                           child: Column(
                             children: [
                               Padding(
-                                padding: const EdgeInsets.symmetric(horizontal: 5),
-                                child: Txt("${txt("paymentSummary")} (${globalSettings.get("currency_______").value})",
-                                    style:
-                                        const TextStyle(fontSize: 12, fontWeight: FontWeight.bold, color: Colors.grey)),
+                                padding:
+                                    const EdgeInsets.symmetric(horizontal: 5),
+                                child: Txt(
+                                    "${txt("paymentSummary")} (${globalSettings.get("currency_______").value})",
+                                    style: const TextStyle(
+                                        fontSize: 12,
+                                        fontWeight: FontWeight.bold,
+                                        color: Colors.grey)),
                               ),
                               const SizedBox(height: 10),
                               const Divider(),
@@ -197,7 +241,10 @@ class _PatientAppointments extends StatelessWidget {
                                         : patient.underPaid
                                             ? txt("underpaid")
                                             : txt("fullyPaid"),
-                                    amount: (patient.paymentsMade - patient.pricesGiven).abs().toString(),
+                                    amount: (patient.paymentsMade -
+                                            patient.pricesGiven)
+                                        .abs()
+                                        .toString(),
                                   )
                                 ],
                               ),
@@ -244,8 +291,10 @@ class _PatientDetailsState extends State<_PatientDetails> {
               child: CupertinoTextField(
                 key: WK.fieldPatientYOB,
                 placeholder: "${txt("birthYear")}...",
-                controller: TextEditingController(text: widget.patient.birth.toString()),
-                onChanged: (value) => widget.patient.birth = int.tryParse(value) ?? widget.patient.birth,
+                controller: TextEditingController(
+                    text: widget.patient.birth.toString()),
+                onChanged: (value) => widget.patient.birth =
+                    int.tryParse(value) ?? widget.patient.birth,
               ),
             ),
           ),
@@ -331,11 +380,16 @@ class _PatientDetailsState extends State<_PatientDetails> {
           isHeader: true,
           child: TagInputWidget(
             key: WK.fieldPatientTags,
-            suggestions: patients.allTags.map((t) => TagInputItem(value: t, label: t)).toList(),
+            suggestions: patients.allTags
+                .map((t) => TagInputItem(value: t, label: t))
+                .toList(),
             onChanged: (tags) {
-              widget.patient.tags = List<String>.from(tags.map((e) => e.value).where((e) => e != null));
+              widget.patient.tags = List<String>.from(
+                  tags.map((e) => e.value).where((e) => e != null));
             },
-            initialValue: widget.patient.tags.map((e) => TagInputItem(value: e, label: e)).toList(),
+            initialValue: widget.patient.tags
+                .map((e) => TagInputItem(value: e, label: e))
+                .toList(),
             strict: false,
             limit: 9999,
             placeholder: "${txt("patientTags")}...",
