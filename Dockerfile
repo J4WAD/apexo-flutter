@@ -1,20 +1,39 @@
-# Use the official Flutter image
-FROM ghcr.io/flutter/flutter:latest
+# Build stage
+FROM debian:latest AS build-env
 
-# Set the working directory inside the container
-WORKDIR /app
+# Install Flutter dependencies
+RUN apt-get update && apt-get install -y \
+    curl \
+    git \
+    unzip \
+    xz-utils \
+    libglu1-mesa
 
-# Copy the Flutter project files
-COPY . .
+# Clone Flutter repository
+RUN git clone https://github.com/flutter/flutter.git /flutter
+ENV PATH="/flutter/bin:${PATH}"
 
-# Enable web support (if not already enabled)
+# Set up Flutter and web support
+RUN flutter channel stable
+RUN flutter upgrade
 RUN flutter config --enable-web
 
-# Install dependencies
+# Copy app source code
+WORKDIR /app
+COPY . .
+
+# Build the app for the web
 RUN flutter pub get
+RUN flutter build web --release
 
-# Build the web app
-RUN flutter build web
+# Production stage
+FROM nginx:stable-alpine
 
-# Serve the app using dhttpd (lightweight server)
-CMD ["dhttpd", "-p", "8080", "--path", "build/web"]
+# Copy the build output to replace the default nginx contents
+COPY --from=build-env /app/build/web /usr/share/nginx/html
+
+# Expose port 80
+EXPOSE 80
+
+# Start nginx
+CMD ["nginx", "-g", "daemon off;"]

@@ -1,6 +1,9 @@
 services:
   - type: web
-    name: flutter-web
+    name: flutter-web-app
     env: docker
-    region: oregon
-    plan: free
+    dockerfilePath: ./Dockerfile
+    autoDeploy: true
+    envVars:
+      - key: PORT
+        value: 80
