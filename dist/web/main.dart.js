@@ -133557,7 +133557,7 @@
     gF8() {
       var s = B.bJ.cH(this.a + "|" + this.c + "|" + $.cF().x),
         r = B.a_R.gTY().cH(s);
-      return "https://dentalpatient.netlify.app/" + A.cX(r, "=", "");
+      return "https://patient.dentisapp.com/" + A.cX(r, "=", "");
     },
     gli(a) {
       var s,
