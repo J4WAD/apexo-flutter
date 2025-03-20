@@ -4,7 +4,7 @@ import 'package:apexo/utils/remote_versions.dart';
 void main() {
   group('Remote Versions Tests', () {
     test('getLatestVersion fetches real data from GitHub', () async {
-      final result = await getLatestVersion('alselawi', 'apexo-flutter', 'dist');
+      final result = await getLatestVersion('j4wad', 'apexo-flutter', 'dist');
 
       expect(result, isA<GithubContent>());
       expect(result.name, contains('.apk'));
@@ -33,19 +33,26 @@ void main() {
       ];
 
       for (var testCase in testCases) {
-        final content = GithubContent.fromJson({'name': testCase['name'], 'download_url': 'https://example.com'});
+        final content = GithubContent.fromJson(
+            {'name': testCase['name'], 'download_url': 'https://example.com'});
         expect(content.version, equals(testCase['expected']));
       }
     });
 
     test('Version comparison sorts correctly', () async {
       final versions = [
-        GithubContent.fromJson({'name': 'app-1.0.0.apk', 'download_url': 'url1'}),
-        GithubContent.fromJson({'name': 'app-2.0.0.apk', 'download_url': 'url2'}),
-        GithubContent.fromJson({'name': 'app-1.5.0.apk', 'download_url': 'url3'}),
-        GithubContent.fromJson({'name': 'app-1.0.1.apk', 'download_url': 'url4'}),
-        GithubContent.fromJson({'name': 'app-1.0.0-beta.apk', 'download_url': 'url5'}),
-        GithubContent.fromJson({'name': 'app-1.0.0-rc.apk', 'download_url': 'url6'}),
+        GithubContent.fromJson(
+            {'name': 'app-1.0.0.apk', 'download_url': 'url1'}),
+        GithubContent.fromJson(
+            {'name': 'app-2.0.0.apk', 'download_url': 'url2'}),
+        GithubContent.fromJson(
+            {'name': 'app-1.5.0.apk', 'download_url': 'url3'}),
+        GithubContent.fromJson(
+            {'name': 'app-1.0.1.apk', 'download_url': 'url4'}),
+        GithubContent.fromJson(
+            {'name': 'app-1.0.0-beta.apk', 'download_url': 'url5'}),
+        GithubContent.fromJson(
+            {'name': 'app-1.0.0-rc.apk', 'download_url': 'url6'}),
       ];
 
       versions.sort((a, b) {
