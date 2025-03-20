@@ -1,11 +1,14 @@
-# Use a Flutter base image
-FROM cirrusci/flutter:latest
+# Use the official Flutter image
+FROM ghcr.io/flutter/flutter:latest
 
-# Set working directory
+# Set the working directory inside the container
 WORKDIR /app
 
-# Copy the Flutter project
+# Copy the Flutter project files
 COPY . .
+
+# Enable web support (if not already enabled)
+RUN flutter config --enable-web
 
 # Install dependencies
 RUN flutter pub get
@@ -13,5 +16,5 @@ RUN flutter pub get
 # Build the web app
 RUN flutter build web
 
-# Set the web server (Use dhttpd or any lightweight server)
+# Serve the app using dhttpd (lightweight server)
 CMD ["dhttpd", "-p", "8080", "--path", "build/web"]

@@ -1,0 +1,6 @@
+services:
+  - type: web
+    name: flutter-web
+    env: docker
+    region: oregon
+    plan: free
