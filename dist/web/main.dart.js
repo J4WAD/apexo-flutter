@@ -123630,7 +123630,7 @@
                   s
                 ),
                 B.aO,
-                A.c_("Apexo", s, s, s, s, s, s, s, s, q, s, s, s, s, s),
+                A.c_("Dentisapp", s, s, s, s, s, s, s, s, q, s, s, s, s, s),
                 B.aO,
                 A.c_(this.d, s, s, s, s, s, s, s, s, q, s, s, s, s, s),
               ],
@@ -451671,7 +451671,7 @@
     B.X3 = new A.Ad(4, "externalNonBrowserApplication");
     B.bjV = new A.Fk(null, null, null, null, null);
     B.bk_ = new A.Fq("https://docs.apexo.app/#section-3", null);
-    B.bk0 = new A.Fq("https://apexo.app/#getting-started", null);
+    B.bk0 = new A.Fq("https://dentisapp.com/#getting-started", null);
     B.X8 = new A.Ae(0, "finderPatternOuter");
     B.X9 = new A.Ae(1, "finderPatternInner");
     B.Xa = new A.Ae(2, "finderPatternDot");
@@ -461915,13 +461915,13 @@
                   "back",
                   "Back",
                   d2,
-                  "Welcome to Apexo",
+                  "Welcome to Dentisapp",
                   d3,
-                  "You have successfully installed Apexo. However, for better experience and for real-world use, you'll have a couple of things to configure. Scan the QR code below to get started.",
+                  "You have successfully installed Dentisapp. However, for better experience and for real-world use, you'll have a couple of things to configure. Scan the QR code below to get started.",
                   d4,
                   "New version available",
                   d5,
-                  "A new version of Apexo is available. Please update to the latest version to get the best experience. Scan the QR code below to get started.",
+                  "A new version of Dentisapp is available. Please update to the latest version to get the best experience. Scan the QR code below to get started.",
                 ],
                 d8,
                 d8

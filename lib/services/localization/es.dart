@@ -364,11 +364,11 @@ class Es implements En {
         "Êtes-vous sûr de vouloir fermer ce panneau? Toutes les modifications non enregistrées seront perdues.",
     "sure": "Sûr",
     "back": "Retour",
-    "firstLaunchDialogTitle": "Bienvenue sur Apexo",
+    "firstLaunchDialogTitle": "Bienvenue sur Dentisapp",
     "firstLaunchDialogContent":
-        "Vous avez installé Apexo avec succès. Cependant, pour une meilleure expérience et une utilisation réelle, vous aurez quelques configurations à faire. Scannez le code QR ci-dessous pour commencer.",
+        "Vous avez installé Dentisapp avec succès. Cependant, pour une meilleure expérience et une utilisation réelle, vous aurez quelques configurations à faire. Scannez le code QR ci-dessous pour commencer.",
     "newVersionDialogTitle": "Nouvelle version disponible",
     "newVersionDialogContent":
-        "Une nouvelle version d'Apexo est disponible. Veuillez mettre à jour vers la dernière version pour obtenir la meilleure expérience. Scannez le code QR ci-dessous pour commencer.",
+        "Une nouvelle version de Dentisapp est disponible. Veuillez mettre à jour vers la dernière version pour obtenir la meilleure expérience. Scannez le code QR ci-dessous pour commencer.",
   };
 }

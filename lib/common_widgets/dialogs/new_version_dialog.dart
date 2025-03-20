@@ -14,7 +14,9 @@ class NewVersionDialog extends StatelessWidget {
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
         children: [
           Txt(txt("newVersionDialogTitle")),
-          IconButton(icon: const Icon(FluentIcons.cancel), onPressed: () => Navigator.pop(context))
+          IconButton(
+              icon: const Icon(FluentIcons.cancel),
+              onPressed: () => Navigator.pop(context))
         ],
       ),
       content: Column(
@@ -22,7 +24,7 @@ class NewVersionDialog extends StatelessWidget {
         children: [
           Txt(txt("newVersionDialogContent")),
           const SizedBox(height: 10),
-          const QRLink(link: "https://apexo.app/#getting-started"),
+          const QRLink(link: "https://dentisapp.com/"),
         ],
       ),
       style: dialogStyling(context, false),

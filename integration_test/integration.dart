@@ -34,7 +34,7 @@ void main() async {
         await LoginPageIntegrationTest(tester: tester).run();
         // there's no PB here, so this cuts of the connectivity for faster tests
         final baseURL = state.pb!.baseURL;
-        state.pb!.baseURL = "https://apexo.app";
+        state.pb!.baseURL = "https://dentisapp.com";
         await DoctorsPageIntegrationTest(tester: tester).run();
         await PatientsIntegrationTest(tester: tester).run();
         await AppointmentsIntegrationTest(tester: tester).run();
@@ -45,7 +45,8 @@ void main() async {
         await SettingsIntegrationTest(tester: tester).run();
         // ------ end integration tests //
 
-        logger('\x1B[32m---------------------------------------------\x1B[0m', null, 3);
+        logger('\x1B[32m---------------------------------------------\x1B[0m',
+            null, 3);
         int noOfPassedTests = 0;
         for (var groupName in passedTests.keys) {
           for (var testName in passedTests[groupName]!) {
@@ -54,8 +55,12 @@ void main() async {
           }
         }
 
-        logger('\x1B[32m✔️✔️✔️✔️✔️ ALL ($noOfPassedTests) INTEGRATION TEST SUCCESS!✔️✔️✔️✔️✔️\x1B[0m', null, 3);
-        logger('\x1B[32m---------------------------------------------\x1B[0m', null, 3);
+        logger(
+            '\x1B[32m✔️✔️✔️✔️✔️ ALL ($noOfPassedTests) INTEGRATION TEST SUCCESS!✔️✔️✔️✔️✔️\x1B[0m',
+            null,
+            3);
+        logger('\x1B[32m---------------------------------------------\x1B[0m',
+            null, 3);
       } catch (e, s) {
         logger("Error: $e", s, 1);
         logger('\x1B[31m❌❌❌❌❌ INTEGRATION TEST FAILED! ❌❌❌❌❌\x1B[0m', null, 1);
