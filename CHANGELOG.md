@@ -1,3 +1,9 @@
+### ____0.4.4____
+
+-   Added link button to client portal
+-   Added support for MACOS and iOS
+-   Added French language to the App
+-   
 ### ____0.4.3____
 
 -   Fixed: Admin mode being activated if its a first login into any device.
